@@ -1,82 +1,106 @@
+<!-- HERO -->
+<p align="center">
+  <img src="assets/banner.png" alt="NammaMistri" width="820" style="max-width:100%;height:auto" />
+</p>
+
 # NammaMistri
 
-> Your neighbourhood, your trusted technicians. Book home services instantly. 🛠️🏠
+> Your neighbourhood construction & home-service assistant — estimate, schedule, and manage work easily. 🛠️🏠
 
 ---
 
-✨ NammaMistri helps people find, book, and manage local home-service professionals — plumbing, electrical, appliance repair, cleaning, carpentry, and more — in a few taps.
+## Overview
 
-## Why NammaMistri? 🤝
+NammaMistri is a lightweight Android app designed to help local masons and homeowners accurately estimate materials, track labor, and manage service appointments. It provides quick calculators for materials (bricks, cement, sand), a labor diary for attendance and advances, and tools to capture site photos and daily progress.
 
-- Fast: Minimal steps to request or book a service.
-- Trustworthy: Technician profiles with ratings and verified work history.
-- Transparent: Clear pricing, invoices, and service history.
-- Reliable: Push updates and appointment reminders to keep things on track.
+This repository contains the Android client; the project can optionally integrate with a backend server for authentication, bookings, push notifications, and persistent data storage.
 
 ---
 
-## Features 🚀
+## Problem Statement
 
-- Quick booking flow with category and sub-category selection.
-- Schedule appointments and choose preferred time slots.
-- Technician profiles, ratings, and customer reviews.
-- Real-time status updates and push notifications.
-- Service history, invoices, and appointment management.
+Traditional construction estimation in rural and semi-urban areas is often manual, inconsistent, and error-prone. Mistris (local builders) commonly overestimate or underestimate quantities, causing material waste, project delays, and financial friction between builders and customers.
 
-## Tech Snapshot 🧰
-
-- Platform: Android
-- Language: Kotlin
-- Build System: Gradle (Kotlin DSL)
-- Architecture: Jetpack components, ViewModels, Room (inferred)
-- Codegen: KSP used for annotation processing (inferred)
+NammaMistri reduces waste and disputes by providing an on-device assistant that standardizes calculations, records labor activity, and preserves a clear audit trail for payments and progress.
 
 ---
 
-## Quick Start ⚡
+## Core Innovation
 
-Prerequisites: Android SDK, Java JDK, and ADB available in your PATH.
+- Coin-referenced & unit-aware calculators: standard civil-engineering formulas implemented with configurable wall thickness and unit settings.  
+- Labor diary with automatic balance tracking: record attendance and advances; compute balances due per worker.  
+- Site-first UX: large, rugged controls and camera-first workflows for field conditions.  
+- Offline-first local persistence (Room DB) with sync-ready endpoints for optional backend integration.
 
-Build debug APK (Windows PowerShell):
+---
+
+## Technical Architecture
+
+```
+Android App (Kotlin)  <--->  REST / GraphQL API (optional backend)  <--->  Server DB
+     - Jetpack (ViewModel, LiveData)
+     - Room (local DB)
+     - Retrofit / OkHttp
+     - KSP for codegen
+     - WorkManager for background sync
+```
+
+- Client: `app/` — Kotlin, Jetpack components, ViewModels, Room, Camera flows.  
+- Backend: `backend/` (optional) — handles auth, bookings, notifications, and data persistence.  
+- Data: local Room DB for sites, logs and cached assets; server DB for cross-device persistence.
+
+---
+
+## Workflow
+
+1. Create or select a Site/Project and enter dimensions.  
+2. Use the Material Calculator to estimate bricks, cement bags, and sand for walls and slabs.  
+3. Record worker attendance and advances in the Labor Diary; the app calculates `Balance Due`.  
+4. Capture Site Photos and tag them to tasks/dates for progress tracking.  
+5. Schedule follow-ups or bookings and notify stakeholders (backend required).  
+6. Export materials lists and simple invoices to share with customers or suppliers.
+
+---
+
+## Setup & Deployment
+
+### Prerequisites
+
+- Java JDK 11+  
+- Android SDK + Platform Tools  
+- Android Studio (recommended)  
+- ADB on PATH
+
+### Local build (Windows PowerShell):
 
 ```powershell
+cd "d:\working projects\nammamistri app"
 .\gradlew.bat assembleDebug
 ```
 
-Install on a connected device:
+### Install on a connected device:
 
 ```powershell
 adb install -r "app\build\outputs\apk\debug\app-debug.apk"
-```
-
-Launch the app (example):
-
-```powershell
 adb shell am start -n com.nammamistri.app/.ui.activities.MainActivity
 ```
 
-> Tip: Use Android Studio to run and debug on emulators or physical devices with instant deploy.
+### Run & debug with Android Studio
+
+- Open the project and run on an emulator or device.  
+- Use the debugger and Logcat to inspect runtime behavior.
+
+### Optional backend deploy
+
+- Deploy `backend/` to your hosting provider (Heroku, AWS, GCP, DigitalOcean).  
+- Configure API base URL in the app build config or remote config.  
+- Use HTTPS and secure token-based auth; enable FCM for push notifications.
 
 ---
 
+## App Details (from project brief)
 
-
-## Project Structure (high level)
-
-- `app/` — Android application module
-- `app/src/main/java` — Kotlin source code
-- `app/build.gradle.kts` — Module build file
-- `gradle/` — Gradle wrapper
-
----
-
-
-
-## Roadmap 🔭
-
-- Add in-app payments and secure wallets.
-- Technician onboarding dashboard.
-- Admin panel for service management.
-- Multi-city and geofencing improvements.
-
----
+- Material Calculator: enter Length × Width × Height → get material list and approximate costs.  
+- Labor Diary: record attendance, advances; app computes balance due per worker automatically.  
+- UI: Tabbed layout (Calculator | Team | Photos), large buttons for on-site use.  
+- Database: Room DB stores multiple active sites and logs; synchronize with backend when online.
