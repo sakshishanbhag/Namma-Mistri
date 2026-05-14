@@ -1,4 +1,6 @@
-# NammaMistri
+<p align="center">
+  # NammaMistri
+</p>
 
 > Your neighbourhood construction & home-service assistant — estimate, schedule, and manage work easily. 🛠️🏠
 
@@ -9,9 +11,7 @@
   <img alt="License" src="https://img.shields.io/badge/license--unset-lightgrey.svg"/>
 </p>
 
-<p align="center">
-  <a href="https://example.com/demo" target="_blank">📺 Watch the Demo Video</a>
-</p>
+
 
 ---
 
