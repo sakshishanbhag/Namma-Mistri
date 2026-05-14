@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calculatorFragment">
+
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.nammamistri.app.ui.fragments.CalculatorFragment"
+        android:label="Calculator" />
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.nammamistri.app.ui.fragments.ResultFragment"
+        android:label="Results" />
+
+    <fragment
+        android:id="@+id/workerListFragment"
+        android:name="com.nammamistri.app.ui.fragments.WorkerListFragment"
+        android:label="Team" />
+
+    <fragment
+        android:id="@+id/workerDetailFragment"
+        android:name="com.nammamistri.app.ui.fragments.WorkerDetailFragment"
+        android:label="Worker Details" />
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.nammamistri.app.ui.fragments.GalleryFragment"
+        android:label="Gallery" />
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.nammamistri.app.ui.fragments.CameraFragment"
+        android:label="Camera" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.nammamistri.app.ui.fragments.SettingsFragment"
+        android:label="Settings" />
+
+</navigation>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Namma-Mistri</string>
+    
+    <!-- Bottom Navigation Tabs -->
+    <string name="tab_calculator">Calculator</string>
+    <string name="tab_team">Team</string>
+    <string name="tab_photos">Photos</string>
+    <string name="tab_settings">Settings</string>
+    
+    <!-- Common Buttons -->
+    <string name="btn_calculate">Calculate</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_recalculate">Recalculate</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_save_changes">SAVE ALL CHANGES</string>
+
+    <!-- Calculator Strings -->
+    <string name="material_calculator">Wall Material Calculator</string>
+    <string name="label_length_bilingual">LENGTH (ಉದ್ದ) IN FEET</string>
+    <string name="label_height_bilingual">HEIGHT (ಎತ್ತರ) IN FEET</string>
+    <string name="label_thickness_bilingual">WALL THICKNESS (ಗೋಡೆಯ ದಪ್ಪ)</string>
+    <string name="label_wastage_bilingual">WASTAGE BUFFER (ಪೋಲು)</string>
+    <string name="hint_enter_length">Enter length</string>
+    <string name="hint_enter_height">Enter height</string>
+    <string name="unit_ft">ft</string>
+    <string name="location_bangalore">Bangalore</string>
+
+    <!-- Thickness Options -->
+    <string name="thickness_4_5">4.5</string>
+    <string name="thickness_9">9</string>
+    <string name="thickness_13_5">13.5</string>
+
+    <!-- Result Strings -->
+    <string name="estimation_results">Estimation Results</string>
+    <string name="label_bricks_bilingual">BRICKS (ಇಟ್ಟಿಗೆಗಳು)</string>
+    <string name="label_cement_bilingual">CEMENT (ಸಿಮೆಂಟ್)</string>
+    <string name="label_sand_bilingual">SAND (ಮರಳು)</string>
+    <string name="unit_pcs">pcs</string>
+    <string name="unit_bags">bags</string>
+    <string name="unit_loads">loads</string>
+    <string name="cost_disclaimer">Estimated cost may vary by market</string>
+    
+    <string name="result_bricks">%d</string>
+    <string name="result_cement">%d</string>
+    <string name="result_sand">%.1f</string>
+    <string name="mock_bricks">1,250</string>
+    <string name="mock_cement">18</string>
+    <string name="mock_sand">0.8</string>
+
+    <!-- Labour Diary -->
+    <string name="label_labour_diary">Labour Diary</string>
+    <string name="label_total_workers">TOTAL WORKERS</string>
+    <string name="label_net_balance">NET BALANCE</string>
+    <string name="tab_attendance">Attendance</string>
+    <string name="tab_payments">Payments</string>
+    <string name="label_balance_due">Balance Due</string>
+    <string name="btn_present">Present</string>
+    <string name="btn_half_day">Half-Day</string>
+    <string name="btn_absent">Absent</string>
+    <string name="mock_worker_name">Ramesh Kumar</string>
+    <string name="mock_worker_role">Mistri (Lead)</string>
+    <string name="label_daily_rate">Daily Rate</string>
+    <string name="mock_rate">₹850</string>
+    <string name="mock_balance">₹2,100</string>
+    <string name="mock_site_info">Site: Bangalore North (Phase 2)</string>
+    <string name="mock_net_balance">₹ -4,200</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_subtitle">Manage your construction sites and material configurations.</string>
+    <string name="label_manage_sites">Manage Sites</string>
+    <string name="btn_new_site">New Site</string>
+    <string name="label_material_rates">Material Rates</string>
+    <string name="label_master_wastage">Master Wastage Buffer</string>
+    <string name="wastage_hint">Global margin added to material estimations.</string>
+    <string name="label_appearance">Appearance</string>
+    <string name="critical_actions">CRITICAL ACTIONS</string>
+    <string name="btn_export_data">Export All Site Data</string>
+    <string name="export_hint">Download all measurements and rate logs as a CSV file.</string>
+    <string name="btn_archive_site">Archive Active Site</string>
+    <string name="active_site_name">Bangalore North - Brigade Orchards</string>
+    <string name="active_site_label">CURRENT ACTIVE SITE</string>
+    <string name="label_min_0">MIN 0%</string>
+    <string name="label_safe_15">SAFE 15%</string>
+    <string name="label_max_30">MAX 30%</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System</string>
+    <string name="label_brick_rate">BRICK (₹/PC)</string>
+    <string name="label_cement_rate">CEMENT (₹/BAG)</string>
+    <string name="label_sand_rate">SAND (₹/LOAD)</string>
+    <string name="default_brick_cost">12</string>
+    <string name="default_cement_cost">450</string>
+    <string name="default_sand_cost">3200</string>
+    <string name="default_wastage">15%</string>
+
+    <!-- Content Descriptions -->
+    <string name="desc_app_logo">Namma Mistri Logo</string>
+
+    <!-- Errors -->
+    <string name="error_empty_field">This field cannot be empty</string>
+    <string name="error_invalid_number">Please enter a valid number</string>
+    
+    <!-- Additional Settings Strings -->
+    <string name="appearance_hint">Choose your preferred app theme - Light, Dark, or follow system settings.</string>
+    <string name="archive_hint">Archive the current site. All historical data will be preserved but the site will be marked as inactive.</string>
+</resources>

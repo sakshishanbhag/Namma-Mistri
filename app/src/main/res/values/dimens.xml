@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_height_min">56dp</dimen>
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="item_spacing">8dp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_heading">18sp</dimen>
+    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+</resources>

@@ -1,0 +1,24 @@
+# Gradle files
+.gradle/
+build/
+*.apk
+*.aar
+*.zip
+
+# Local configuration file
+local.properties
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Kotlin
+*.kexe
+out/

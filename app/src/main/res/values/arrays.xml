@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="wall_thickness_options">
+        <item>0.5 Brick</item>
+        <item>1 Brick</item>
+        <item>1.5 Brick</item>
+        <item>2 Brick</item>
+    </array>
+</resources>

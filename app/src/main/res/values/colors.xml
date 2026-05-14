@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors - Matching Image 1 -->
+    <color name="colorPrimary">#00214D</color>
+    <color name="colorPrimaryDark">#001533</color>
+    <color name="colorAccent">#00214D</color>
+    <color name="colorSecondary">#00214D</color>
+
+    <!-- Neutral & Background -->
+    <color name="colorBackground">#F8FAFC</color> <!-- Light grayish-white background -->
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorSurfaceVariant">#F1F5F9</color>
+    <color name="colorOnSurface">#00214D</color>
+
+    <!-- Text Colors -->
+    <color name="colorTextPrimary">#00214D</color>
+    <color name="colorTextHeadline">#00214D</color>
+    <color name="colorTextSecondary">#64748B</color>
+    <color name="colorNeutral">#94A3B8</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Result Card Backgrounds -->
+    <color name="bg_result_bricks">#F1F5F9</color>
+    <color name="bg_result_cement">#F1F5F9</color>
+    <color name="bg_result_sand">#F1F5F9</color>
+
+    <!-- Result Icon Tints -->
+    <color name="tint_result_bricks">#00214D</color>
+    <color name="tint_result_cement">#00214D</color>
+    <color name="tint_result_sand">#00214D</color>
+
+    <!-- Component Colors -->
+    <color name="divider">#E2E8F0</color>
+    <color name="chip_unselected">#E2E8F0</color>
+    <color name="attendance_card_bg">#F1F5F9</color>
+    <color name="status_present">#00214D</color>
+    <color name="status_half_day">#E2E8F0</color>
+    <color name="status_absent">#EF4444</color>
+
+    <color name="colorError">#EF4444</color>
+    <color name="colorSuccess">#10B981</color>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors for Dark Mode -->
+    <color name="colorPrimary">#82C0FF</color>
+    <color name="colorPrimaryDark">#001533</color>
+    <color name="colorAccent">#82C0FF</color>
+    <color name="colorSecondary">#82C0FF</color>
+
+    <!-- Dark Theme Backgrounds -->
+    <color name="colorBackground">#001026</color>
+    <color name="colorSurface">#001F4E</color>
+    <color name="colorSurfaceVariant">#002C6D</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextHeadline">#FFFFFF</color>
+    <color name="colorTextSecondary">#9CA3AF</color>
+    <color name="colorNeutral">#9CA3AF</color>
+    <color name="colorOnPrimary">#00214D</color>
+
+    <!-- Result Card Backgrounds (Adapted for dark) -->
+    <color name="bg_result_bricks">#2D1F10</color>
+    <color name="bg_result_cement">#101D2D</color>
+    <color name="bg_result_sand">#1F2937</color>
+
+    <!-- Result Icon Tints -->
+    <color name="tint_result_bricks">#FB923C</color>
+    <color name="tint_result_cement">#60A5FA</color>
+    <color name="tint_result_sand">#9CA3AF</color>
+
+    <!-- Component Colors -->
+    <color name="divider">#002C6D</color>
+    <color name="chip_unselected">#002C6D</color>
+    <color name="attendance_card_bg">#002C6D</color>
+    <color name="status_present">#82C0FF</color>
+    <color name="status_half_day">#002C6D</color>
+    <color name="status_absent">#F87171</color>
+
+    <color name="colorError">#F87171</color>
+    <color name="colorSuccess">#34D399</color>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/calculatorFragment"
+        android:icon="@drawable/ic_calculator"
+        android:title="@string/tab_calculator" />
+
+    <item
+        android:id="@+id/workerListFragment"
+        android:icon="@drawable/ic_team"
+        android:title="@string/tab_team" />
+
+    <item
+        android:id="@+id/galleryFragment"
+        android:icon="@drawable/ic_gallery"
+        android:title="@string/tab_photos" />
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/tab_settings" />
+</menu>
