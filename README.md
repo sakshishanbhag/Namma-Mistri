@@ -1,38 +1,52 @@
 # NammaMistri
 
-> Local home service booking — fast, reliable, and trusted.
+> Your neighbourhood, your trusted technicians. Book home services instantly. 🛠️🏠
 
-NammaMistri is an Android app that connects users with nearby, vetted technicians for home repairs and services. Book jobs, schedule visits, track progress, and review service providers — all from your Android device.
+---
 
-## Features
+✨ NammaMistri helps people find, book, and manage local home-service professionals — plumbing, electrical, appliance repair, cleaning, carpentry, and more — in a few taps.
 
-- Fast booking flow for common home services (plumbing, electrical, appliances, carpentry, cleaning).
-- Schedule appointments and receive reminders.
-- Technician profiles with ratings and work history.
-- Real-time status updates and notifications.
-- Service history and invoice tracking.
+## Why NammaMistri? 🤝
 
-## Tech Stack
+- Fast: Minimal steps to request or book a service.
+- Trustworthy: Technician profiles with ratings and verified work history.
+- Transparent: Clear pricing, invoices, and service history.
+- Reliable: Push updates and appointment reminders to keep things on track.
+
+---
+
+## Features 🚀
+
+- Quick booking flow with category and sub-category selection.
+- Schedule appointments and choose preferred time slots.
+- Technician profiles, ratings, and customer reviews.
+- Real-time status updates and push notifications.
+- Service history, invoices, and appointment management.
+
+## Tech Snapshot 🧰
 
 - Platform: Android
 - Language: Kotlin
-- Build: Gradle (Kotlin DSL)
-- Tooling: Jetpack libraries, Kotlin Symbol Processing (KSP) (inferred)
+- Build System: Gradle (Kotlin DSL)
+- Architecture: Jetpack components, ViewModels, Room (inferred)
+- Codegen: KSP used for annotation processing (inferred)
 
-## Getting Started
+---
 
-Prerequisites: Android SDK, Java JDK, and ADB on your PATH.
+## Quick Start ⚡
 
-Build a debug APK:
+Prerequisites: Android SDK, Java JDK, and ADB available in your PATH.
+
+Build debug APK (Windows PowerShell):
 
 ```powershell
-./gradlew assembleDebug
+.\gradlew.bat assembleDebug
 ```
 
-Install the APK on a connected device:
+Install on a connected device:
 
 ```powershell
-adb install -r app/build/outputs/apk/debug/app-debug.apk
+adb install -r "app\build\outputs\apk\debug\app-debug.apk"
 ```
 
 Launch the app (example):
@@ -41,18 +55,28 @@ Launch the app (example):
 adb shell am start -n com.nammamistri.app/.ui.activities.MainActivity
 ```
 
-Note: On Windows you may want to run `gradlew.bat` instead of `./gradlew`.
+> Tip: Use Android Studio to run and debug on emulators or physical devices with instant deploy.
 
-## Contributing
+---
 
-- Open an issue for bugs or feature requests.
-- Fork the repo, create a feature branch, and submit a pull request.
-- Follow existing Kotlin/Android code style and include tests where applicable.
 
-## License
 
-Add a `LICENSE` file to this repository with your preferred license (for example, MIT or Apache-2.0).
+## Project Structure (high level)
 
-## Contact
+- `app/` — Android application module
+- `app/src/main/java` — Kotlin source code
+- `app/build.gradle.kts` — Module build file
+- `gradle/` — Gradle wrapper
 
-For questions or support, open an issue or add a pull request with proposed changes.
+---
+
+
+
+## Roadmap 🔭
+
+- Add in-app payments and secure wallets.
+- Technician onboarding dashboard.
+- Admin panel for service management.
+- Multi-city and geofencing improvements.
+
+---
