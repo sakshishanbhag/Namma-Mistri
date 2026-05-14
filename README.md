@@ -1,7 +1,3 @@
-<!-- HERO -->
-<p align="center">
-  <img src="assets/banner.png" alt="NammaMistri" width="820" style="max-width:100%;height:auto" />
-</p>
 # NammaMistri
 
 > Your neighbourhood construction & home-service assistant — estimate, schedule, and manage work easily. 🛠️🏠
