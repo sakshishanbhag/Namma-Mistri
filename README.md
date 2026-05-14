@@ -1,5 +1,5 @@
 <p align="center">
-  # NammaMistri
+  NammaMistri
 </p>
 
 > Your neighbourhood construction & home-service assistant — estimate, schedule, and manage work easily. 🛠️🏠
