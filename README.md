@@ -118,19 +118,3 @@ adb shell am start -n com.nammamistri.app/.ui.activities.MainActivity
 - Database: Room DB stores multiple active sites and logs; synchronize with backend when online.
 
 ---
-
-## Contributing
-
-- Open issues for bugs/feature requests.  
-- Fork, create a branch, and submit a PR.  
-- Include tests for critical logic (calculators, balance computation).
-
----
-
-## License
-
-Please add a `LICENSE` file (suggested: MIT or Apache-2.0).
-
----
-
-Made with ❤️ — NammaMistri Team
