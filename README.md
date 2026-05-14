@@ -1,8 +1,3 @@
-<!-- HERO -->
-<p align="center">
-  <img src="assets/banner.png" alt="NammaMistri" width="820" style="max-width:100%;height:auto" />
-</p>
-
 # NammaMistri
 
 > Your neighbourhood construction & home-service assistant — estimate, schedule, and manage work easily. 🛠️🏠
@@ -46,7 +41,7 @@ Android App (Kotlin)  <--->  REST / GraphQL API (optional backend)  <--->  Serve
 ```
 
 - Client: `app/` — Kotlin, Jetpack components, ViewModels, Room, Camera flows.  
-- Backend: `backend/` (optional) — handles auth, bookings, notifications, and data persistence.  
+- Backend: `backend/` — handles auth, bookings, notifications, and data persistence.  
 - Data: local Room DB for sites, logs and cached assets; server DB for cross-device persistence.
 
 ---
@@ -74,7 +69,7 @@ Android App (Kotlin)  <--->  REST / GraphQL API (optional backend)  <--->  Serve
 ### Local build (Windows PowerShell):
 
 ```powershell
-cd "d:\working projects\nammamistri app"
+cd "nammamistri app"
 .\gradlew.bat assembleDebug
 ```
 
@@ -90,9 +85,9 @@ adb shell am start -n com.nammamistri.app/.ui.activities.MainActivity
 - Open the project and run on an emulator or device.  
 - Use the debugger and Logcat to inspect runtime behavior.
 
-### Optional backend deploy
+### Backend deploy
 
-- Deploy `backend/` to your hosting provider (Heroku, AWS, GCP, DigitalOcean).  
+- Deploy `backend/` to your hosting provider(Firebase).  
 - Configure API base URL in the app build config or remote config.  
 - Use HTTPS and secure token-based auth; enable FCM for push notifications.
 
