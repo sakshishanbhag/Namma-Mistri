@@ -1,6 +1,27 @@
+<!-- HERO -->
+<p align="center">
+  <img src="assets/banner.png" alt="NammaMistri" width="820" style="max-width:100%;height:auto" />
+</p>
 # NammaMistri
 
 > Your neighbourhood construction & home-service assistant — estimate, schedule, and manage work easily. 🛠️🏠
+
+<p align="center">
+  <a href="#overview"><img alt="NammaMistri" src="https://img.shields.io/badge/Android-Kotlin-4285F4.svg"/></a>
+  <img alt="Build" src="https://img.shields.io/badge/build-gradle-brightgreen.svg"/>
+  <img alt="Status" src="https://img.shields.io/badge/status-alpha-orange.svg"/>
+  <img alt="License" src="https://img.shields.io/badge/license--unset-lightgrey.svg"/>
+</p>
+
+<p align="center">
+  <a href="https://example.com/demo" target="_blank">📺 Watch the Demo Video</a>
+</p>
+
+---
+
+### About this app
+
+NammaMistri is built to professionalize small-scale construction workflows and local home services. It packs material calculators, labor tracking, and photo-based progress logs into a rugged, offline-capable Android app so masons and homeowners can estimate, document, and settle work with confidence.
 
 ---
 
@@ -41,7 +62,7 @@ Android App (Kotlin)  <--->  REST / GraphQL API (optional backend)  <--->  Serve
 ```
 
 - Client: `app/` — Kotlin, Jetpack components, ViewModels, Room, Camera flows.  
-- Backend: `backend/` — handles auth, bookings, notifications, and data persistence.  
+- Backend: `backend/` (optional) — handles auth, bookings, notifications, and data persistence.  
 - Data: local Room DB for sites, logs and cached assets; server DB for cross-device persistence.
 
 ---
@@ -69,7 +90,7 @@ Android App (Kotlin)  <--->  REST / GraphQL API (optional backend)  <--->  Serve
 ### Local build (Windows PowerShell):
 
 ```powershell
-cd "nammamistri app"
+cd "d:\working projects\nammamistri app"
 .\gradlew.bat assembleDebug
 ```
 
@@ -85,9 +106,9 @@ adb shell am start -n com.nammamistri.app/.ui.activities.MainActivity
 - Open the project and run on an emulator or device.  
 - Use the debugger and Logcat to inspect runtime behavior.
 
-### Backend deploy
+### Optional backend deploy
 
-- Deploy `backend/` to your hosting provider(Firebase).  
+- Deploy `backend/` to your hosting provider (Heroku, AWS, GCP, DigitalOcean).  
 - Configure API base URL in the app build config or remote config.  
 - Use HTTPS and secure token-based auth; enable FCM for push notifications.
 
@@ -99,3 +120,21 @@ adb shell am start -n com.nammamistri.app/.ui.activities.MainActivity
 - Labor Diary: record attendance, advances; app computes balance due per worker automatically.  
 - UI: Tabbed layout (Calculator | Team | Photos), large buttons for on-site use.  
 - Database: Room DB stores multiple active sites and logs; synchronize with backend when online.
+
+---
+
+## Contributing
+
+- Open issues for bugs/feature requests.  
+- Fork, create a branch, and submit a PR.  
+- Include tests for critical logic (calculators, balance computation).
+
+---
+
+## License
+
+Please add a `LICENSE` file (suggested: MIT or Apache-2.0).
+
+---
+
+Made with ❤️ — NammaMistri Team
